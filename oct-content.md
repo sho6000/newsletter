@@ -10,7 +10,7 @@ Sunbird Newsletter · Edition Oct 2026
 
 ## Sunbird RC is wallet ready
 
-Sunbird RC is a powerful building block that allows you to quickly configure and deploy electronic Registries, as well as Verifiable Credentials based workflows (issuance and validation). V2.1.0 of this open-source, MIT licensed DPG now also supports wallet integration, making it an even more powerful offering. Sunbird RC is part of several DPIs such as [CoWIN](https://www.cowin.gov.in/) and [DIKSHA](https://diksha.gov.in/) in India and is now seeing global adoption.
+Sunbird RC is a powerful building block that allows you to quickly configure and deploy electronic Registries, as well as Verifiable Credentials based workflows (issuance and validation). v2.1.0 of this open-source, MIT licensed DPG now also supports wallet integration, making it an even more powerful offering. Sunbird RC is part of several DPIs such as [CoWIN](https://www.cowin.gov.in/) and [DIKSHA](https://diksha.gov.in/) in India and is now seeing global adoption.
 
 Sunbird RC is part of [DIVOC](https://divoc.digit.org/#divocs-journey-so-far-country-stories), which has issued over 2 billion COVID-19 vaccination certificates across India and four other countries. RC also powers [NSDC](https://www.nsdcindia.org/)'s skilling registry of 200 million entries and has credentialed 20 million officials on [iGOT Karmayogi](https://igotkarmayogi.gov.in/#/).
 

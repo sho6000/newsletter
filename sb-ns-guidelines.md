@@ -67,7 +67,7 @@ Recommend re-pulling these straight from the original brand guide/Figma file rat
 
 | Hex | Palette source | Role in the newsletter |
 |---|---|---|
-| `#540f3b` | Moss | Body text; also the on-brand link colour |
+| `#1a1a1a` | — (plain black, not a palette colour) | Body text, link colour, headings — kept as black rather than Moss for readability |
 | `#fffef4` | Ivory | Header/footer text, button text, social icon circle backgrounds |
 | `#ffffff` | — (pure white, not a palette colour) | Inner content card background |
 | `#f6f1ea` | — (original cream, not a palette colour) | Outer page background, kept intentionally distinct from the white content card |
@@ -80,4 +80,6 @@ Recommend re-pulling these straight from the original brand guide/Figma file rat
 
 Two colours above are intentionally **not** from the palette: `#ffffff` (pure white) and `#f6f1ea` (the original muted cream) are both kept as-is for the page/card background pairing, per an explicit decision to preserve that two-tone effect rather than force both onto the same brand colour.
 
-`#430c2f` is a derived shade (not a literal palette entry) — a ~20% darkened version of Moss, used specifically so the header/footer background reads darker than the Moss-coloured body text.
+`#430c2f` is a derived shade (not a literal palette entry) — a ~20% darkened version of Moss, used for the header/footer background.
+
+`#1a1a1a` (body text, links, headings) is also intentionally kept outside the palette — Moss was tried here first but reverted back to plain black for readability, since the brand palette has no near-black option of its own.
