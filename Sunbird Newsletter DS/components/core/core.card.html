@@ -1,0 +1,18 @@
+<!-- @dsCard group="Components" viewport="700x420" name="Core primitives" subtitle="Button, Badge, Card, Divider, Callout" -->
+<!doctype html><html><head><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script><style>body{margin:0;background:var(--paper-0);font-family:var(--font-text)}.wrap{padding:20px;display:flex;flex-direction:column;gap:16px}.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { Button, Badge, Card, Divider, Callout } = window.SunbirdNewsletterDesignSystem_cf1a7e;
+function Demo(){return (<div className="wrap">
+<div className="row"><Button>Read the issue</Button><Button variant="secondary">Subscribe</Button><Button variant="ghost" iconAfter="→">Read more</Button><Button variant="alert" size="sm">Closes Friday</Button><Button disabled>Disabled</Button></div>
+<div className="row"><Button size="sm">Small</Button><Button size="md">Medium</Button><Button size="lg">Large</Button></div>
+<div className="row"><Badge tone="marigold">Issue 04</Badge><Badge tone="clay">Sunbird + Education</Badge><Badge tone="sky">Community</Badge><Badge tone="vermilion">New</Badge><Badge tone="outline">Building blocks</Badge></div>
+<div className="row" style={{alignItems:'stretch'}}><Card style={{flex:1}}><b>Paper</b><div style={{font:'var(--type-body)'}}>Default surface.</div></Card><Card tone="marigold" style={{flex:1}}><b>Marigold</b><div style={{font:'var(--type-body)'}}>Tinted block.</div></Card><Card tone="clay" style={{flex:1}}><b>Clay</b><div style={{font:'var(--type-body)'}}>Inverse block.</div></Card></div>
+<Divider variant="constellation" nodes={4} />
+<Callout label="From the editors" tone="marigold">Replies to this issue land in a real inbox.</Callout>
+</div>);}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script></body></html>

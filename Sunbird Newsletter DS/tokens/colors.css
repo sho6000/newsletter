@@ -1,0 +1,53 @@
+:root{
+  /* --- base ramp: marigold (brand ground) --- */
+  --marigold-50:#fffaea; --marigold-100:#fff3cd; --marigold-200:#ffe9a6;
+  --marigold-300:#ffdd75; /* core brand background, sampled from source deck */
+  --marigold-400:#f2c948; --marigold-500:#d9a92c;
+
+  /* --- base ramp: clay (headline / wordmark colour) --- */
+  --clay-100:#f3d9d0; --clay-200:#e0a992; --clay-300:#c87b5c;
+  --clay-400:#a85236; /* core brand ink-on-marigold, sampled */
+  --clay-500:#8a3f27; --clay-600:#6a2f1c;
+
+  /* --- base ramp: vermilion (COSS mark, alerts, emphasis) --- */
+  --vermilion-100:#fadfda; --vermilion-300:#e08375;
+  --vermilion-400:#cf5948; /* COSS logo red, sampled */
+  --vermilion-500:#b5432f;
+
+  /* --- base ramp: ochre (nodes, secondary accents) --- */
+  --ochre-200:#eccfa8; --ochre-300:#daa26a; --ochre-400:#cc8546; --ochre-500:#a86a33;
+
+  /* --- base ramp: sky (cool counterweight; constellation nodes) --- */
+  --sky-100:#e2eff3; --sky-200:#bcdae2; --sky-300:#70aec0; --sky-400:#4c8b9d; --sky-500:#356b7b;
+
+  /* --- neutrals --- */
+  --ink-900:#2b2b2b; --ink-700:#434343; --ink-500:#595959; --ink-300:#8c8c8c;
+  --paper-0:#ffffff; --paper-50:#fdfbfa; --paper-100:#f6f1ea; --line-200:#e6ddd1;
+
+  /* --- semantic aliases --- */
+  --bg-page:var(--marigold-300);
+  --bg-sheet:var(--paper-50);
+  --surface-card:var(--paper-0);
+  --surface-card-muted:var(--paper-100);
+  --surface-accent:var(--marigold-100);
+  --surface-inverse:var(--clay-400);
+
+  --text-display:var(--clay-400);
+  --text-heading:var(--clay-500);
+  --text-body:var(--ink-700);
+  --text-muted:var(--ink-300);
+  --text-on-inverse:var(--paper-0);
+  --text-link:var(--vermilion-500);
+  --text-link-hover:var(--clay-500);
+
+  --border-hairline:var(--line-200);
+  --border-rule:var(--ink-500);
+  --border-strong:var(--clay-400);
+
+  --accent-primary:var(--clay-400);
+  --accent-secondary:var(--sky-300);
+  --accent-tertiary:var(--ochre-400);
+  --accent-alert:var(--vermilion-400);
+
+  --node-a:var(--ochre-400); --node-b:var(--sky-300); --node-c:var(--clay-400); --node-d:var(--vermilion-400);
+}

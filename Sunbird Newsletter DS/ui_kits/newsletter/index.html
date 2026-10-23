@@ -1,0 +1,37 @@
+<!-- @dsCard group="Newsletter" viewport="760x900" name="Newsletter web view" subtitle="Issue, archive and subscribe — click through" -->
+<!doctype html><html><head><meta charset="utf-8"><title>Sunbird — The Dispatch</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--surface-card-muted);font-family:var(--font-text)}
+.topbar{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;background:var(--paper-0);border-bottom:1px solid var(--border-hairline)}
+.tabs{display:flex;gap:4px}
+.tab{padding:8px 16px;border:0;border-radius:999px;background:transparent;color:var(--text-body);font:600 13px/1 var(--font-display);cursor:pointer;transition:background var(--dur-base) var(--ease-standard),color var(--dur-base) var(--ease-standard)}
+.tab:hover{background:var(--marigold-100)}
+.tab[aria-selected="true"]{background:var(--clay-400);color:#fff}
+</style></head><body><div id="root"></div>
+<script type="text/babel" src="IssueScreen.jsx"></script>
+<script type="text/babel" src="ArchiveScreen.jsx"></script>
+<script type="text/babel" src="SubscribeScreen.jsx"></script>
+<script type="text/babel">
+const { useState } = React;
+function App(){
+  const [tab,setTab]=useState('issue');
+  return (<div>
+    <div className="topbar">
+      <img src="../../assets/sunbird-wordmark-alpha.png" alt="Sunbird" style={{height:24}} />
+      <div className="tabs">
+        {[['issue','July 2026'],['archive','Archive'],['subscribe','Subscribe']].map(([k,l])=>(
+          <button key={k} className="tab" aria-selected={tab===k} onClick={()=>setTab(k)}>{l}</button>
+        ))}
+      </div>
+    </div>
+    {tab==='issue' && <IssueScreen/>}
+    {tab==='archive' && <ArchiveScreen onOpen={()=>setTab('issue')}/>}
+    {tab==='subscribe' && <SubscribeScreen/>}
+  </div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script></body></html>

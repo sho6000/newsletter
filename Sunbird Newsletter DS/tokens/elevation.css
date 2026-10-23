@@ -1,0 +1,8 @@
+:root{
+  /* Sunbird surfaces are flat-first: hairline borders do the work, shadows are soft and warm. */
+  --shadow-none:none;
+  --shadow-card:0 1px 2px rgba(107,58,32,.08);
+  --shadow-raised:0 6px 18px rgba(107,58,32,.12);
+  --shadow-inset-hairline:inset 0 0 0 1px var(--border-hairline);
+  --focus-ring:0 0 0 3px rgba(168,82,54,.28);
+}
